@@ -1,0 +1,32 @@
+.triforce {
+  --triforce-size: 1em;
+  --triforce-color: #ffbc00;
+  margin: 50px;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: var(--triforce-size) solid transparent;
+  border-right: var(--triforce-size) solid transparent;
+  border-bottom: calc(var(--triforce-size) * 1.733) solid var(--triforce-color);
+}
+
+.triforce:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-left: var(--triforce-size) solid transparent;
+  border-right: var(--triforce-size) solid transparent;
+  border-bottom: calc(var(--triforce-size) * 1.733) solid var(--triforce-color);
+  top: calc(var(--triforce-size) * 1.733);
+  left: calc(-1 * var(--triforce-size) * 2);
+}
+
+.triforce:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-left: var(--triforce-size) solid transparent;
+  border-right: var(--triforce-size) solid transparent;
+  border-bottom: calc(var(--triforce-size) * 1.733) solid var(--triforce-color);
+  top: calc(var(--triforce-size) * 1.733);
+}
