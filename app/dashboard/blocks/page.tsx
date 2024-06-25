@@ -1,3 +1,7 @@
+import BlocksTable from "@/app/ui/blocks/table";
+
 export default function Page() {
-  return <p>Blocks Table</p>;
+  return (
+    <BlocksTable />
+  );
 }

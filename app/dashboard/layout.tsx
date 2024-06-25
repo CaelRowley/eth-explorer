@@ -1,15 +1,16 @@
 "use client";
 
 import Link from 'next/link';
-import Logo from '@/app/ui/logo';
-import { PowerIcon } from '@heroicons/react/24/outline';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
 import {
+  PowerIcon,
   HomeIcon,
   DocumentTextIcon,
   CubeIcon,
 } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
-import { usePathname } from 'next/navigation';
+
+import Logo from '@/app/ui/logo';
 
 const links = [
   {
