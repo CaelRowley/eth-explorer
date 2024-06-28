@@ -25,6 +25,10 @@ export async function fetchBlocks(): Promise<Block[]> {
       },
       cache: 'no-store',
     });
+
+    // To simulate long data fetch
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+
     const blocks: Block[] = await response.json();
     
     return blocks
